@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap');
+@font-face {
+    font-family: 'Noto Sans CJKr';
+    src:url('NotoSansCJKkr-Regular.otf');
+}
+@font-face {
+    font-family: 'Noto Sans CJKr Bold';
+    src:url('NotoSansCJKkr-Bold.otf');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: 'Noto Sans CJKr','Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+
+#wrapper{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#header{
+    width: 100%;
+    height: 80px;
+}
+
+#header-wrap{
+    width: 1280px;
+    height: 100%;
+    /* background: tomato; */
+    margin:0 auto;
+}
+#header-wrap h1{
+    margin-top: 16px;
+    width: 86px;
+    float: left;
+}
+#header-wrap h1 img{
+    width: 100%;
+}
+#header-wrap #nav{
+    height: 100%;
+    float: right;
+    line-height: 80px;
+}
+#header-wrap #nav li{
+    float: left;
+    width: 140px;
+    height: 100%;
+    text-align: center;
+    /* margin: 0 33px; */
+}
+#header-wrap #nav li a{
+    display: block;
+    width: 100%;
+    color: #000;
+    font-size: 18px;
+    transition: all ease 0.6s;
+}
+#header-wrap #nav li a:hover{
+    background-color: rgb(234, 255, 248);
+}
+#header-wrap::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#hero{
+    width: 100%;
+    height: 280px;
+    background: url('../imgs/companyBG.jpg');
+    background-repeat: no-repeat;
+    background-position: right 8%;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+}
+#hero p{
+    font-size: 72px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 280px;
+    text-shadow: 0px 0px 5px #333;
+}
+
+
+#section{
+    width: 100%;
+    height: 1100px;
+}
+#section #sectionWrap{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+#section #sectionWrap #breadCrumbWrap{
+    width: 100%;
+    height: 56px;
+}
+#section #sectionWrap #breadCrumbWrap .crumbBlank{
+    height: 100%;
+    width: 40px;
+} 
+#section #sectionWrap #breadCrumbWrap .crumbLeft{
+    float: left;
+}
+#section #sectionWrap #breadCrumbWrap #crumbMid{
+    float: left;
+    width: 1200px;
+    height: 100%;
+    border-bottom: 1px solid #cacaca;
+}
+#section #sectionWrap #breadCrumbWrap #crumbMid p{
+    line-height: 56px;
+}
+#section #sectionWrap #breadCrumbWrap #crumbMid p span{
+    color: #676767;
+}
+#section #sectionWrap #breadCrumbWrap .crumbRight{
+    float: right;
+}
+#section #sectionWrap #breadCrumbWrap:after{
+    content:'';
+    clear: both;
+    display: block;
+}
+#section #sectionContent{
+    width: 100%;
+    height: 1044px;
+}
+#section #sectionContent #contentNav{
+    height: 365px;
+    width: 180px;
+    float: left;
+}
+#section #sectionContent #contentNav ul{
+    width: 100%;
+    margin-top: 41px;
+}
+#section #sectionContent #contentNav ul li{
+    width: 100%;
+    height: 54px;
+    transition: all ease 0.2s;
+}
+#section #sectionContent #contentNav ul li:nth-child(6){
+    background: #f5f5f5;
+}
+#section #sectionContent #contentNav ul li:nth-child(6) a{
+    color: #0059d2;
+    font-family: 'Noto Sans CJKr Bold';
+}
+#section #sectionContent #contentNav ul li a{
+    padding-left: 15px;
+    line-height: 54px;
+    font-size: 20px;
+    color: #333;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#section #sectionContent #contentNav ul li:hover{
+    background: #f5f5f5;
+}
+#section #sectionContent #contentMain{
+    float: right;
+    width: 1100px;
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 110px;
+}
+#section #sectionContent #contentMain #addressWrap{
+    width: 100%;
+    height: 88px;
+    text-align: center;
+}
+#section #sectionContent #contentMain #addressWrap p{
+    font-size: 18px;
+}
+#section #sectionContent #contentMain #addressWrap p:nth-of-type(2){
+    margin-top: 8px;
+}
+
+#section #sectionContent #contentMain #addressMap{
+    width: 990px;
+    height: 560px;
+}
+
+#section #sectionContent #contentMain #addressHowto{
+    width: 990px;
+    height: 130px;
+    margin-top: 20px;
+}
+#section #sectionContent #contentMain #addressHowto .addressBox{
+    width: 480px;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+#section #sectionContent #contentMain #addressHowto .addressBox p:nth-of-type(1){
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    font-size: 24px;
+    font-family: 'Noto Sans CJKr Bold';
+    background: #5550f5;
+}
+#section #sectionContent #contentMain #addressHowto .addressBox p:nth-of-type(2){
+    width: 100%;
+    height: 92px;
+    font-size: 18px;
+    line-height: 25px;
+    background: #423fff;
+    padding: 8px 30px 0;
+}
+#section #sectionContent #contentMain #addressHowto #addressHowtoLeft{
+    float: left;
+}
+#section #sectionContent #contentMain #addressHowto #addressHowtoRight{
+    float: right;
+}
+#section #sectionContent #contentMain::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+#footer{
+    margin-top: 130px;
+    height: 243px;
+    background: #3a3d40;
+    border-top: 1px solid #535353;
+}
+#footer .footerWrap{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+#footer #footer-left{
+    float: left;
+    margin-top: 60px;
+    width: 86px;
+    height: 44px;
+}
+#footer #footer-left a img{
+    width: 100%;
+}
+#footer #footer-right{
+    float: right;
+    color: #fff;
+    font-size: 18px;
+    text-align: right;
+    margin-top: 70px;
+}
+#footer #footer-right a{
+    text-decoration: none;
+    color: #fff;
+}
+#footer #footer-right p:nth-child(2){
+    margin-top: 28px;
+    line-height: 1.2;
+}

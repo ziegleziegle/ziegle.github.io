@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styleWays.css">
+    <title>에이치케이씨</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="header-wrap">
+                <h1><a href="index.html"><img src="imgs/logo.png" alt="HKC 로고 "></a></h1>
+                <ul id="nav">
+                    <li><a href="ceo.html">회사소개</a></li>
+                    <li><a href="products.html">제품소개</a></li>
+                    <li><a href="#">기술력</a></li>
+                    <li><a href="#">기술자료</a></li>
+                    <li><a href="#">게시판</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="hero">
+            <p>오시는길</p>
+        </div>
+        <div id="section">
+            <div id="sectionWrap">
+                <div id="breadCrumbWrap">
+                    <div class="crumbLeft crumbBlank">
+
+                    </div>
+                    <div id="crumbMid">
+                        <p><span>Home > 회사소개 ></span> 오시는길</p>
+                    </div>
+                    <div class="crumbRight crumbBlank">
+
+                    </div>
+                </div>
+                <div id="sectionContent">
+                    <div id="contentNav">
+                        <ul>
+                            <li><a href="ceo.html">대표이사 인사말</a></li>
+                            <li><a href="#">설립목표</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">납품실적</a></li>
+                            <li><a href="members.html">조직도</a></li>
+                            <li><a href="ways.html">오시는길</a></li>
+                        </ul>
+                    </div>
+                    <div id="contentMain">
+                        <div id="addressWrap">
+                            <p>경기도 시흥시 엠티브이28로 26(정왕동2644번지) 1사 401호</p>
+                            <p>TEL : 031-488-8266   |   FAX : 031-428-8269</p>
+                        </div>
+                        <div id="addressMap">
+                            <div id="map" style="width:100%;height:100%;"></div>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=587dc2248f790250e9babea2b2a81482"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.3283520, 126.6944000), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(37.3283520, 126.6944000); 
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+// marker.setMap(null);    
+</script>
+                    </div>
+                    <div id="addressHowto">
+                        <div id="addressHowtoLeft" class="addressBox">
+                            <p>대중교통이용</p>
+                            <p>정왕역(4호선) 앞 정왕역환승센터에서 11-A번 승차하여<br> 한국산업기술대학교 제2캠퍼스를 바로 지나 하차한후<br> 약 160m 직진</p>
+                        </div>
+                        <div id="addressHowtoRight" class="addressBox">
+                                <p>자차이용</p>
+                            <p>안산시청 중심으로 77번 국도를 이용하여 오이도 선사<br>유적공원 직진 한국산업기술대학교 제2캠퍼스를<br> 한 블럭 지나 코너 바로 앞</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <div class="footerWrap">
+                <div id="footer-left">
+                    <a href="#"><img src="imgs/logo.png" alt=""></a>
+                </div>
+
+                <div id="footer-right">
+                    <p>
+                        <a href="index.html">개인정보취급방침</a> | <a href="#">이메일무단수집금지</a>
+                    </p>
+
+                    <p>
+                        대표 : 한성민 | 경기도 시흥시 엠티브이28로(정왕동2644번지) 1사 401<br>
+                        TEL : 031-488-8266 | FAX : 031-488-8269 | 사업자등록번호 : 113-81-41698<br>
+                        E-mail : hk8266@hkcon.co.kr | Copyright by 2015. (주)에이치케이씨 All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

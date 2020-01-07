@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap');
+@font-face {
+    font-family: 'Noto Sans CJKr';
+    src:url('NotoSansCJKkr-Regular.otf');
+}
+@font-face {
+    font-family: 'Noto Sans CJKr Bold';
+    src:url('NotoSansCJKkr-Bold.otf');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: 'Noto Sans CJKr','Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+
+#wrapper{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#header{
+    width: 100%;
+    height: 80px;
+}
+
+#header-wrap{
+    width: 1280px;
+    height: 100%;
+    margin:0 auto;
+}
+#header-wrap h1{
+    margin-top: 16px;
+    width: 86px;
+    float: left;
+}
+#header-wrap h1 img{
+    width: 100%;
+}
+#header-wrap #nav{
+    height: 100%;
+    float: right;
+    line-height: 80px;
+}
+#header-wrap #nav li{
+    float: left;
+    width: 140px;
+    height: 100%;
+    text-align: center;
+    /* margin: 0 33px; */
+}
+#header-wrap #nav li a{
+    display: block;
+    width: 100%;
+    color: #000;
+    font-size: 18px;
+    transition: all ease 0.6s;
+}
+#header-wrap #nav li a:hover{
+    background-color: rgb(234, 255, 248);
+}
+#header-wrap::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#hero{
+    width: 100%;
+    height: 280px;
+    background: url('../imgs/productsBG.jpg');
+    background-repeat: no-repeat;
+    background-position: right 8%;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+}
+#hero p{
+    font-size: 72px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 280px;
+    text-shadow: 0px 0px 5px #333;
+}
+
+
+#section{
+    width: 100%;
+    height: 1254px;
+}
+#section #sectionWrap{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+#section #sectionWrap #breadCrumbWrap{
+    width: 100%;
+    height: 56px;
+}
+#section #sectionWrap #breadCrumbWrap .crumbBlank{
+    height: 100%;
+    width: 40px;
+} 
+#section #sectionWrap #breadCrumbWrap .crumbLeft{
+    float: left;
+}
+#section #sectionWrap #breadCrumbWrap #crumbMid{
+    float: left;
+    width: 1200px;
+    height: 100%;
+    border-bottom: 1px solid #cacaca;
+}
+
+#section #sectionWrap #breadCrumbWrap .crumbRight{
+    float: right;
+}
+#section #sectionWrap #breadCrumbWrap:after{
+    content:'';
+    clear: both;
+    display: block;
+}
+#section #sectionContent{
+    width: 100%;
+    height: 1198px;
+}
+#section #sectionContent #sectionContentWrap{
+    width: 100%;
+    height: 930px;
+    margin-top: 80px;
+}
+#section #sectionContent #sectionContentWrap .productBox{
+    width: 620px;
+    height: 296px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    float: left;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#section #sectionContent #sectionContentWrap .productBox img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+#section #sectionContent #sectionContentWrap .productBox p{
+    position: absolute;
+    top: 0px;
+    padding-left: 35px;
+    box-sizing: content-box;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: rgba(255, 255, 255, 0.8);
+}
+#section #sectionContent #sectionContentWrap .prodBox1{
+    
+}
+#section #sectionContent #sectionContentWrap .prodBox2{
+    
+}
+#section #sectionContent #sectionContentWrap .prodBox3{
+    
+}
+#section #sectionContent #sectionContentWrap .prodBox4{
+    
+}
+#section #sectionContent #sectionContentWrap .prodBox5, .prodBox6{
+    
+    margin-bottom: 0px;
+}
+#section #sectionContent #sectionContentWrap .productBox:nth-of-type(2n){
+    margin-right: 0px;
+}
+ #section #sectionContent #sectionContentWrap img:hover{
+    transform: scale(1.2);
+ }
+
+
+
+
+#footer{
+    margin-top: 130px;
+    height: 243px;
+    background: #3a3d40;
+    border-top: 1px solid #535353;
+}
+#footer .footerWrap{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+#footer #footer-left{
+    float: left;
+    margin-top: 60px;
+    width: 86px;
+    height: 44px;
+}
+#footer #footer-left a img{
+    width: 100%;
+}
+#footer #footer-right{
+    float: right;
+    color: #fff;
+    font-size: 18px;
+    text-align: right;
+    margin-top: 70px;
+}
+#footer #footer-right a{
+    text-decoration: none;
+    color: #fff;
+}
+#footer #footer-right p:nth-child(2){
+    margin-top: 28px;
+    line-height: 1.2;
+}
