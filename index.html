@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>marcos</title>
+</head>
+<body>
+    <div class="open">
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
+    <section>
+        <div class="header">
+            <h1 class="logo"><a href="index.html">MARCOS</a></h1>
+            <i class="fa fa-bars x2" onclick="menuToggle()"></i>
+            <ul id="navigation">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="works.html">Works</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <i class="fa fa-times x2" onclick="menuToggle()"></i>
+            </ul>
+        </div>
+        <script>
+        function menuToggle() {
+        var element = document.getElementById("navigation")
+        element.classList.toggle("show")
+        }
+        </script>
+        <div class="bannerText">
+            <h2>Creative UX/UI</h2><br>
+            <h3>and awesome fornt-end Design</h3>
+            <p>
+                반갑습니다! 디자인 트랜드&amp;개발지식 에 관심이 많고 라이딩을 사랑하는 이시욱의 개인 포트폴리오 사이트 입니다. 
+            </p>
+            <a href="about.html" class="read-more">Read More</a>
+
+                
+        </div>
+        <img src="images/cello.png" alt="" class="cello">
+        <ul class="sci">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <div class="element1"></div>
+        <div class="element2"></div>
+    </section>
+</body>
+</html>

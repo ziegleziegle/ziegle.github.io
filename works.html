@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/worksStyle.css">
+    <script src="js/app.js"></script>
+    <title>marcos-works</title>
+</head>
+<body>
+    <div class="open">
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
+    <section>
+        <div class="header">
+            <h1 class="logo"><a href="index.html">MARCOS</a></h1>
+            <i class="fa fa-bars x2" onclick="menuToggle()"></i>
+            <ul id="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="works.html" class="active">Works</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <i class="fa fa-times x2" onclick="menuToggle()"></i>
+            </ul>
+        </div>
+        <script>
+            function menuToggle() {
+            var element = document.getElementById("navigation")
+            element.classList.toggle("show")
+            }
+        </script>
+        <div class="works-container">
+            <ul id="category">
+                <li>
+                    <a href="#allShow" class="showAllBtn activeRect">all</a>
+                </li>
+                <li>
+                    <a href="#frontWebShow" class="category-btn">Frontend</a>
+                </li>
+                <li>
+                    <a href="#webAppShow" class="category-btn">Web&App-design</a>
+                </li>
+                <li>
+                    <a href="#designShow" class="category-btn">ETC.design</a>
+                </li>
+            </ul>
+            <div class="folio-box">
+                <div class="item frontWeb frontWebShow all" data-link="http://yourmajka.dothome.co.kr/lightpaper/"><p>학습지 사이트 리뉴얼<br><span>HTML5, CSS3, JAVASCRIPT / 반응형</span></p></div>
+                <div class="item frontWeb frontWebShow all" data-link="http://yourmajka.dothome.co.kr/hkc/"><p>중소기업 사이트 리뉴얼<br><span>HTML5, CSS3, JAVASCRIPT / 고정형</span></p></div>
+                <div class="item frontWeb frontWebShow all" data-link="http://yourmajka.dothome.co.kr/timeywimey/"><p>앱 서비스 페이지 제작<br><span>HTML5, CSS3, BOOTSTRAP / 반응형</span></p></div>
+                <div class="item frontWeb frontWebShow all" data-link="http://yourmajka.dothome.co.kr/accuradioapp/"><p>음악 스트리밍 웹앱 제작<br><span>HTML5, CSS3, JAVASCRIPT</span></p></div>
+
+                <div class="item webApp webAppShow all"><p>자동차 마이크로 페이지 디자인<br>포토샵</p></div>
+                <div class="item webApp webAppShow all"><p>통신사 앱 리뉴얼 디자인<br>XD, 일러스트레이터</p></div>
+                <div class="item webApp webAppShow all"><p>IOS 카메라 소셜 앱 제작디자인<br>포토샵</p></div>
+                <div class="item webApp webAppShow all"><p>팝송 스트리밍 앱 리뉴얼 디자인<br>포토샵</p></div>
+                <div class="item webApp webAppShow all"><p>직업훈련학교 메인 페이지 제작디자인<br>포토샵</p></div>
+                <div class="item webApp webAppShow all"><p>쇼핑몰 메인 페이지 디자인<br>포토샵</p></div>
+                <div class="item webApp webAppShow all"><p>레스토랑 메인 페이지 디자인<br>포토샵</p></div>
+
+                <div class="item design designShow all"><p>직업훈련학교 팜플렛 제작 디자인<br>포토샵</p></div>
+                <div class="item design designShow all"><p>와인 메뉴판 제작 디자인<br>일러스트레이터</p></div>
+                <div class="item design designShow all"><p>명함 제작 디자인<br>포토샵</p></div>
+                <div class="item design designShow all"><p>X배너 제작 디자인<br>포토샵</p></div>
+                <div class="item design designShow all"><p>폐쇄몰 쇼핑몰 배너 제작 디자인<br>포토샵</p></div>
+                <div class="item design designShow all"><p>커피 아이콘 제작 디자인<br>포토샵</p></div>
+                <div class="item design designShow all"><p>리플렛 디자인<br>포토샵</p></div>
+            </div>
+        </div>
+        <!-- <div class="works-slider">
+            <div class="items"> 
+                <div class="inlineItems all front" id="front">
+                    <div class="item frontWeb" data-link="http://yourmajka.dothome.co.kr/lightpaper/"><img src="images/lightpaper-main.png" alt=""><div class="desc"><p>학습지 사이트 리뉴얼<br><span>HTML5, CSS3, JAVASCRIPT / 반응형</span></p></div></div>
+                    <div class="item frontWeb" data-link="http://yourmajka.dothome.co.kr/hkc/"><img src="images/hkc-main.png" alt=""><div class="desc"><p>중소기업 사이트 리뉴얼<br><span>HTML5, CSS3, JAVASCRIPT / 고정형</span></p></div></div>
+                    <div class="item frontWeb" data-link="http://yourmajka.dothome.co.kr/timeywimey/"><img src="images/timeywimey-main.png" alt=""><div class="desc"><p>앱 서비스 페이지 제작<br><span>HTML5, CSS3, BOOTSTRAP / 반응형</span></p></div></div>
+                    <div class="item frontWeb" data-link="http://yourmajka.dothome.co.kr/accuradioapp/"><img src="images/musicwebapp.png" alt=""><div class="desc"><p>음악 스트리밍 웹앱 제작<br><span>HTML5, CSS3, JAVASCRIPT</span></p></div></div>
+                 </div>
+                 <div class="inlineItems all webD" id="webD">
+                    <div class="item webApp"><img src="images/carmain.jpg" alt=""><div class="desc"><p>자동차 마이크로 페이지 디자인<br><span>포토샵</span></p></div></div>
+                    <div class="item webApp"><img src="images/cjhello.jpg" alt=""><div class="desc"><p>통신사 앱 리뉴얼 디자인<br><span>XD, 일러스트레이터</span></p></div></div>
+                    <div class="item webApp"><img src="images/timeywimey-main.jpg" alt=""><div class="desc"><p>IOS 카메라 소셜 앱 제작디자인<br><span>포토샵</span></p></div></div>
+                    <div class="item webApp"><img src="images/accuradio.jpg" alt=""><div class="desc"><p>팝송 스트리밍 앱 리뉴얼 디자인<br><span>포토샵</span></p></div></div>
+                    <div class="item webApp"><img src="images/ictmain.jpg" alt=""><div class="desc"><p>직업훈련학교 메인 페이지 제작디자인<br><span>포토샵</span></p></div></div>
+                    <div class="item webApp"><img src="images/mrc5.jpg" alt=""><div class="desc"><p>쇼핑몰 메인 페이지 디자인<br><span>포토샵</span></p></div></div>
+                    <div class="item webApp"><img src="images/restaurant.png" alt=""><div class="desc"><p>레스토랑 메인 페이지 디자인<br><span>포토샵</span></p></div></div>
+                 </div>
+                <div class="inlineItems all otherD" id="otherD">
+                    <div class="item design"><img src="images/palmplet.jpg" alt=""><div class="desc"><p>직업훈련학교 팜플렛 제작 디자인<br><span>포토샵</span></p></div></div>
+                    <div class="item design"><img src="images/winemenu.jpg" alt=""><div class="desc"><p>와인 메뉴판 제작 디자인<br><span>일러스트레이터</span></p></div></div>
+                    <div class="item design"><img src="images/bscard.jpg" alt=""><div class="desc"><p>명함 제작 디자인<br><span>포토샵</span></p></div></div>
+                    <div class="item design"><img src="images/xbanner.jpg" alt=""><div class="desc"><p>X배너 제작 디자인<br><span>포토샵</span></p></div></div>
+                    <div class="item design"><img src="images/tripbanner.jpg" alt=""><div class="desc"><p>폐쇄몰 쇼핑몰 배너 제작 디자인<br><span>포토샵</span></p></div></div>
+                    <div class="item design"><img src="images/coffee_items.jpg" alt=""><div class="desc"><p>커피 아이콘 제작 디자인<br><span>포토샵</span></p></div></div>
+                    <div class="item design"><img src="images/replete.jpg" alt=""><div class="desc"><p>리플렛 디자인<br><span>포토샵</span></p></div></div>
+                </div>
+                </div>
+            
+                
+        </div>
+        <ul id="category">
+                <li>
+                    <a href="#all" class="showAllBtn activeRect">all</a><small> 17</small>
+                </li>
+                <li>
+                    <a href="#front" class="category-btn">Frontend</a><small> 4</small>
+                </li>
+                <li>
+                    <a href="#webD" class="category-btn">Web&App-design</a><small> 7</small>
+                </li>
+                <li>
+                    <a href="#otherD" class="category-btn">ETC.design</a><small> 6</small>
+                </li>
+                
+            </ul> -->
+        <ul class="sci">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <div class="folioWrap hidden">
+            <div class="imgWrap">
+                <img src="" alt="">
+            </div>
+            <a href="" target="_blank">사이트 바로가기</a>
+            <i class="fas fa-times closeFolioBtn"></i>
+        </div>
+    </section>
+
+</body>
+</html> 
