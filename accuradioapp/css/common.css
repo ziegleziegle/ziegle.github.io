@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    /* overflow: hidden; */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#wrapper{
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+}
+#header{
+    width: 100%;
+    height: 64px;
+    padding: 7px;
+    background-color: #000;
+    position: relative;
+}
+#header #burger{
+    position: absolute;
+    width: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#logo{
+    width: 166px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+#drawer{
+    width: 80%;
+    height: 100vh;
+    background: #000;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    left: -80%;
+    opacity: 0;
+    transition: all 1s cubic-bezier(.68,0,.05,.99);
+}
+#drawer #drawer-top{
+    width: 100%;
+    height: 64px;
+    padding: 7px;
+    /* background: green; */
+    position: relative;
+}
+#drawer #drawer-top #xbtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 23px;
+}
+#drawer #drawer-top input[type=text] {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    width: 80%;
+    height: 18px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-image : url('../img/search.png');
+    background-size: 22px;
+    background-position: 95%; 
+    background-repeat:no-repeat;
+}
+#drawer ul{
+    width: 100%;
+}
+#drawer ul li{
+    text-align: center;
+    width: 100%;
+    margin: 40px 0;
+}
+#drawer ul li a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+#drawer #bottom-banner{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
